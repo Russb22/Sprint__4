@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
-public class OrderScooter {
+public class OrderScooterPageObject {
     private final WebDriver driver;
     private final By headerOrderButton = By.xpath(".//button[@class='Button_Button__ra12g']");
     private final By midleOrderButton = By.xpath(".//button[(@class = 'Button_Button__ra12g Button_Middle__1CSJM' and (text()='Заказать'))]");
@@ -26,7 +26,7 @@ public class OrderScooter {
     private final By buttonOrderFinish = By.xpath(".//button[(@class = 'Button_Button__ra12g Button_Middle__1CSJM' and (text()='Заказать'))]");
     private final By buttonConfirm = By.xpath(".//button[(@class = 'Button_Button__ra12g Button_Middle__1CSJM' and @type='button') or (text()='Да')]");
 
-    public OrderScooter(WebDriver driver) {                                                         // конструктор
+    public OrderScooterPageObject(WebDriver driver) {                                                         // конструктор
         this.driver = driver;}
 
     public void waitForLoadHomePage() {                                                         //метод ожидания загрузки страницы

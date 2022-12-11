@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
-public class TestList {
+public class QuestionsPageObject {
     private final WebDriver driver;
     private final By cookeButton = By.className("App_CookieButton__3cvqF"); //кнопка куки принять
     private final By howMuchButton = By.id("accordion__heading-0");  // локатор для клика на строку
@@ -26,7 +26,7 @@ public class TestList {
     private final By scooterDeliveryRq = By.id("accordion__heading-7");       //клик на строку
     private final By scooterDeliveryRs = By.xpath(".//p[text()='Да, обязательно. Всем самокатов! И Москве, и Московской области.']");     //строка ответа
 
-    public TestList(WebDriver driver) {                     // конструктор
+    public QuestionsPageObject(WebDriver driver) {                     // конструктор
         this.driver = driver;
     }
     public void waitForLoadLine() {                                                                                                                 //метод ожидания загрузки страницы
